@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: bold 14px Arial, sans-serif;
+}
+
+html {
+  height: 100%;
+  background: lightgrey;
+  background-size: cover;
+}
+
+#calculator {
+  width: 325px;
+  height: auto;
+  margin: 100px auto;
+  padding: 20px 20px 9px;
+  background: #53b23e;
+  border-radius: 3px;
+}
+
+.top span.clear {
+  float: left;
+}
+
+.top .screen {
+  height: 40px;
+  width: 212px;
+  float: right;
+  padding: 0 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  font-size: 17px;
+  line-height: 40px;
+  color: white;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.keys, .top {
+  overflow: hidden;
+}
+
+.keys span, .top span.clear {
+  float: left;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  width: 66px;
+  height: 36px;
+  background: #53b23e;
+  border-radius: 3px;
+  border: 1px white solid;
+  margin: 0 7px 11px 0;
+  color: white;
+  line-height: 36px;
+  text-align: center;
+  user-select: none;
+}
+
+.keys span.operator {
+  background: #53b23e;
+  margin-right: 0;
+}
+
+.keys span.eval {
+  background: #53b23e;
+  color: white;
+}
+
+.top span.clear {
+  background: #53b23e;
+  color: white;
+}
+
+.keys span:active {
+  box-shadow: 0px 0px #6b54d3;
+  top: 4px;
+  background: #c6ffba;
+}
+
+.keys span.eval:active {
+  box-shadow: 0px 0px #717a33;
+  top: 4px;
+  background: #c6ffba;
+}
+
+.top span.clear:active {
+  top: 4px;
+  box-shadow: 0px 0px #d3545d;
+  background: #c6ffba;
+}
